@@ -12,7 +12,7 @@ const SMALL_ZONES = [
   { id: 6, icon: Coffee, title: 'CAFE & BAR', desc: 'Craft coffee, energy drinks, and gamer-themed signature cocktails.' }
 ];
 
-const variants = {
+const desktopVariants = {
   enter: (direction: number) => ({
     x: direction > 0 ? 1000 : -1000,
     opacity: 0
@@ -29,6 +29,32 @@ const variants = {
   })
 };
 
+const mobileSwipeVariants = {
+  initial: () => ({
+    opacity: 0,
+    x: 0,
+    y: 50,
+    scale: 0.8,
+    rotate: 0
+  }),
+  animate: (idx: number) => ({
+    opacity: idx === 0 ? 1 : Math.max(0.2, 1 - idx * 0.2), 
+    x: 0,
+    y: idx * 30, 
+    scale: 1 - idx * 0.05,
+    zIndex: 10 - idx,
+    rotate: 0
+  }),
+  exit: (direction: number) => ({
+    opacity: 0,
+    x: direction === 1 ? -400 : 400,
+    y: 0,
+    scale: 0.9,
+    rotate: direction === 1 ? -15 : 15,
+    transition: { duration: 0.4 }
+  })
+};
+
 export default function GamingZones() {
   const [[carouselIndex, direction], setCarouselState] = useState([0, 0]);
   const containerRef = useRef(null);
@@ -38,29 +64,32 @@ export default function GamingZones() {
     offset: ["start end", "end start"]
   });
 
-  // Parallax effect: translates image vertically as the user scrolls
   const backgroundY = useTransform(scrollYProgress, [0, 1], ["-15%", "15%"]);
 
-  const nextSlide = () => {
-    setCarouselState([carouselIndex + 3 >= SMALL_ZONES.length ? 0 : carouselIndex + 3, 1]);
+  const nextSlide = (swipeDirection: number = 1) => {
+    setCarouselState([carouselIndex + 1 >= SMALL_ZONES.length ? 0 : carouselIndex + 1, swipeDirection]);
   };
 
   const prevSlide = () => {
-    setCarouselState([carouselIndex - 3 < 0 ? Math.max(0, SMALL_ZONES.length - 3) : carouselIndex - 3, -1]);
+    setCarouselState([carouselIndex - 1 < 0 ? SMALL_ZONES.length - 1 : carouselIndex - 1, -1]);
   };
 
-  const visibleZones = SMALL_ZONES.slice(carouselIndex, carouselIndex + 3);
+  const visibleZones = [
+    SMALL_ZONES[carouselIndex % SMALL_ZONES.length],
+    SMALL_ZONES[(carouselIndex + 1) % SMALL_ZONES.length],
+    SMALL_ZONES[(carouselIndex + 2) % SMALL_ZONES.length]
+  ];
 
   return (
     <section id="zones" ref={containerRef} className="py-32 bg-[#050505] relative overflow-hidden reveal">
       
-      {/* True Parallax Background using Framer Motion */}
-      <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+      {/* True Parallax Background */}
+      <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden flex justify-center">
         <motion.img 
           style={{ y: backgroundY }}
           src="/immersive-bg.jpeg" 
           alt="Immersive Background" 
-          className="absolute -top-[20%] -left-[10%] w-[120%] h-[140%] object-cover opacity-20"
+          className="absolute -top-[20%] w-[150%] max-w-none h-[140%] object-cover opacity-20"
         />
       </div>
 
@@ -75,10 +104,11 @@ export default function GamingZones() {
           <div className="border-r border-outline-variant/20"></div>
         </div>
       </div>
+      
       <div className="max-w-7xl mx-auto px-8 relative z-10">
         <div className="mb-20 text-center">
-          <h2 className="text-5xl font-black italic tracking-tighter mb-4 text-on-surface">IMMERSIVE <span className="text-primary">ZONES</span></h2>
-          <p className="text-on-surface-variant max-w-xl mx-auto">Explore tailored environments designed for every gaming style.</p>
+          <h2 className="text-5xl font-black italic tracking-tighter mb-4 text-on-surface drop-shadow-md">IMMERSIVE <span className="text-primary">ZONES</span></h2>
+          <p className="text-on-surface-variant max-w-xl mx-auto drop-shadow-md">Explore tailored environments designed for every gaming style.</p>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -112,48 +142,43 @@ export default function GamingZones() {
           </div>
         </div>
         
-        {/* Smaller Zones Framer Motion Carousel */}
-        <div className="mt-20">
+        {/* Desktop Carousel - Hidden on Mobile */}
+        <div className="mt-20 hidden md:block">
           <div className="flex justify-center mb-10">
-            <h3 className="text-2xl font-black italic text-on-surface">MORE EXPERIENCES</h3>
+            <h3 className="text-2xl font-black italic text-on-surface drop-shadow-md">MORE EXPERIENCES</h3>
           </div>
-          
-          <div className="relative w-full group/carousel px-10 md:px-14">
-            {/* Left Button */}
+          <div className="relative w-full px-14">
             <button 
               onClick={prevSlide}
-              className="absolute left-0 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full border border-outline-variant/30 flex items-center justify-center hover:bg-surface-container-highest hover:border-primary/50 transition-colors z-20 bg-background/80 backdrop-blur shadow-xl"
+              className="absolute left-0 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full border border-outline-variant/30 flex items-center justify-center hover:bg-surface-container-highest hover:border-primary/50 transition-colors z-30 bg-background/80 backdrop-blur shadow-xl"
             >
               <ChevronLeft size={24} />
             </button>
-            
-            {/* Right Button */}
             <button 
               onClick={nextSlide}
-              className="absolute right-0 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full border border-outline-variant/30 flex items-center justify-center hover:bg-surface-container-highest hover:border-primary/50 transition-colors z-20 bg-background/80 backdrop-blur shadow-xl"
+              className="absolute right-0 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full border border-outline-variant/30 flex items-center justify-center hover:bg-surface-container-highest hover:border-primary/50 transition-colors z-30 bg-background/80 backdrop-blur shadow-xl"
             >
               <ChevronRight size={24} />
             </button>
-
-            <div className="relative overflow-hidden w-full h-[320px] md:h-[280px]">
+            <div className="relative overflow-hidden w-full h-[280px]">
               <AnimatePresence initial={false} custom={direction}>
                 <motion.div
                   key={carouselIndex}
                   custom={direction}
-                  variants={variants}
+                  variants={desktopVariants}
                   initial="enter"
                   animate="center"
                   exit="exit"
-                  transition={{
-                    x: { type: "spring", stiffness: 300, damping: 30 },
-                    opacity: { duration: 0.2 }
-                  }}
-                  className="absolute inset-0 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 w-full h-full"
+                  transition={{ x: { type: "spring", stiffness: 300, damping: 30 }, opacity: { duration: 0.2 } }}
+                  className="absolute inset-0 grid grid-cols-3 gap-8 w-full h-full"
                 >
-                  {visibleZones.map((zone) => {
+                  {visibleZones.map((zone, idx) => {
                     const Icon = zone.icon;
                     return (
-                      <div key={zone.id} className="bg-surface-container-high p-8 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-colors group h-full flex flex-col justify-center shadow-lg">
+                      <div 
+                        key={zone.id} 
+                        className={`bg-surface-container-high p-8 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all duration-500 group h-full flex flex-col justify-center shadow-2xl ${idx === 1 ? 'shadow-[0_0_30px_rgba(177,103,255,0.2)]' : ''}`}
+                      >
                         <Icon className="text-primary mb-6 group-hover:scale-110 transition-transform drop-shadow-[0_0_8px_rgba(168,85,247,0.5)]" size={48} />
                         <h4 className="text-xl font-bold mb-3 uppercase">{zone.title}</h4>
                         <p className="text-sm text-on-surface-variant leading-relaxed">{zone.desc}</p>
@@ -164,16 +189,61 @@ export default function GamingZones() {
               </AnimatePresence>
             </div>
           </div>
-          
-          {/* Carousel Indicators */}
-          <div className="flex justify-center gap-2 mt-8">
-            {Array.from({ length: Math.ceil(SMALL_ZONES.length / 3) }).map((_, i) => (
-              <div 
-                key={i} 
-                className={`h-1.5 rounded-full transition-all duration-300 ${Math.floor(carouselIndex / 3) === i ? 'w-8 bg-primary' : 'w-2 bg-outline-variant/30'}`}
-              />
-            ))}
-          </div>
+        </div>
+
+      </div>
+
+      {/* Mobile Framer Motion Interactive Swipe Deck */}
+      <div className="md:hidden mt-16 relative w-full flex flex-col items-center overflow-visible">
+        <h3 className="text-2xl font-black italic text-on-surface drop-shadow-md mb-8">MORE EXPERIENCES</h3>
+        
+        <div className="relative w-full max-w-[85%] h-[400px]">
+          <AnimatePresence custom={direction}>
+            {visibleZones.map((zone, idx) => {
+              const Icon = zone.icon;
+              const isFront = idx === 0;
+              
+              return (
+                <motion.div
+                  key={zone.id}
+                  custom={direction}
+                  variants={mobileSwipeVariants}
+                  initial="initial"
+                  animate="animate"
+                  exit="exit"
+                  custom={idx === 0 ? direction : undefined}
+                  // We manually set custom index for animation interpolation
+                  transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                  drag={isFront ? "x" : false}
+                  dragConstraints={{ left: 0, right: 0 }}
+                  dragElastic={0.8}
+                  onDragEnd={(e, { offset: dragOffset, velocity }) => {
+                    if (dragOffset.x < -50 || velocity.x < -500) {
+                      nextSlide(1);
+                    } else if (dragOffset.x > 50 || velocity.x > 500) {
+                      nextSlide(-1);
+                    }
+                  }}
+                  className="absolute inset-0 w-full h-full bg-[#150f1f]/95 backdrop-blur-xl border border-white/20 rounded-[2.5rem] p-8 flex flex-col justify-center items-center text-center shadow-[0_20px_50px_rgba(0,0,0,0.5)]"
+                  style={{ cursor: isFront ? 'grab' : 'default' }}
+                  whileDrag={{ scale: 1.05, rotate: -2, zIndex: 50 }}
+                  animate={mobileSwipeVariants.animate(idx)}
+                >
+                  {/* Inner highlight for luxury feel */}
+                  <div className="absolute inset-0 rounded-[2.5rem] border-[0.5px] border-white/20 pointer-events-none"></div>
+                  <div className="absolute -top-20 -right-20 w-40 h-40 bg-primary/20 blur-[50px] rounded-full pointer-events-none"></div>
+
+                  <Icon className="text-primary mb-6 drop-shadow-[0_0_15px_rgba(177,103,255,0.8)]" size={56} />
+                  <h4 className="text-2xl font-black mb-4 uppercase tracking-tight text-white">{zone.title}</h4>
+                  <p className="text-sm text-white/70 leading-relaxed font-medium px-4">{zone.desc}</p>
+                </motion.div>
+              );
+            })}
+          </AnimatePresence>
+        </div>
+        
+        <div className="mt-12 text-center text-white/40 text-[10px] tracking-widest font-bold uppercase animate-pulse">
+          Swipe to explore
         </div>
       </div>
     </section>

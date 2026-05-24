@@ -41,12 +41,16 @@ export default function Footer() {
 
       {/* Main Center Text Area */}
       <div className="py-12 md:py-16 px-4 flex flex-col items-center justify-center relative">
-        <h2 className="text-2xl md:text-4xl lg:text-5xl font-normal tracking-tight text-center leading-[1.1] max-w-4xl">
-          CREATIVE AND <br className="hidden md:block"/>
-          RELIABLE <span className="inline-flex items-center justify-center align-middle mx-2 w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-black rounded-full border border-white/20 shadow-[0_0_30px_rgba(177,103,255,0.15)] relative overflow-hidden group">
-            <Gamepad2 className="text-[#b167ff] w-5 h-5 md:w-8 md:h-8 lg:w-10 lg:h-10 relative z-10 group-hover:scale-110 transition-transform" />
-          </span> GAME <br className="hidden md:block"/>
-          DEVELOPMENT STUDIO
+        <h2 className="text-2xl md:text-4xl lg:text-5xl font-normal tracking-tight text-center leading-[1.2] max-w-4xl flex flex-col items-center">
+          <span>CREATIVE AND</span>
+          <span className="flex items-center justify-center gap-2 md:gap-4 my-2">
+            RELIABLE 
+            <span className="inline-flex items-center justify-center w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-black rounded-full border border-white/20 shadow-[0_0_30px_rgba(177,103,255,0.15)] group">
+              <Gamepad2 className="text-[#b167ff] w-5 h-5 md:w-8 md:h-8 lg:w-10 lg:h-10 group-hover:scale-110 transition-transform" />
+            </span> 
+            GAME
+          </span>
+          <span>DEVELOPMENT STUDIO</span>
         </h2>
       </div>
 
