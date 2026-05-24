@@ -17,7 +17,7 @@ export default function Footer() {
         </div>
 
         {/* Giant stylized text */}
-        <h2 className="text-[clamp(2.5rem,11vw,9.5rem)] font-black italic leading-[0.85] tracking-tighter uppercase select-none whitespace-nowrap overflow-hidden text-ellipsis">
+        <h2 className="text-[clamp(3rem,13vw,11.5rem)] font-black italic leading-[0.85] tracking-tighter uppercase select-none whitespace-nowrap overflow-hidden text-ellipsis text-center">
           <span className="bg-gradient-to-b from-white via-white/90 to-white/60 bg-clip-text text-transparent">BrandCraft</span>
         </h2>
       </div>
