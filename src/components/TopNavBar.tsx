@@ -2,8 +2,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { Menu, X, Home, Trophy, Gamepad2, Mail } from "lucide-react";
+import { useClient } from "@/components/ClientProvider";
 
 export default function TopNavBar() {
+  const client = useClient();
   const [scrolled, setScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const menuOpenRef = useRef(isMobileMenuOpen);
@@ -28,7 +30,7 @@ export default function TopNavBar() {
           : "mt-0 w-full max-w-full bg-transparent border border-transparent rounded-none py-6 px-6 md:py-8 md:px-12 shadow-none"
       }`}>
         <div className="text-sm font-bold tracking-widest uppercase text-white flex-shrink-0">
-          BRANDCRAFT
+          {client.name}
         </div>
         
         {/* Desktop Navigation Links */}
@@ -39,9 +41,14 @@ export default function TopNavBar() {
         </nav>
         
         <div className="hidden md:flex items-center flex-shrink-0">
-          <Link className="font-bold text-white/80 tracking-widest uppercase text-[10px] hover:text-white transition-colors" href="/contact">
+          <a 
+            className="font-bold text-white/80 tracking-widest uppercase text-[10px] hover:text-white transition-colors" 
+            href={`https://wa.me/${client.phone}?text=${encodeURIComponent(client.whatsappMessage)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             CONTACT US
-          </Link>
+          </a>
         </div>
 
         {/* Mobile Menu */}
@@ -75,10 +82,16 @@ export default function TopNavBar() {
                 <Gamepad2 size={16} className="opacity-80" />
                 Immersive Zones
               </Link>
-              <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center gap-3 px-5 py-3 rounded-full bg-white/25 backdrop-blur-sm font-semibold text-white text-sm hover:bg-white/35 transition-colors">
+              <a 
+                href={`https://wa.me/${client.phone}?text=${encodeURIComponent(client.whatsappMessage)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsMobileMenuOpen(false)} 
+                className="flex items-center gap-3 px-5 py-3 rounded-full bg-white/25 backdrop-blur-sm font-semibold text-white text-sm hover:bg-white/35 transition-colors"
+              >
                 <Mail size={16} className="opacity-80" />
                 Contact Us
-              </Link>
+              </a>
             </div>
           </div>
         </div>

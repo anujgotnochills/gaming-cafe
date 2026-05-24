@@ -1,8 +1,10 @@
 import React from 'react';
 import { Gamepad2 } from 'lucide-react';
 import Link from 'next/link';
+import { useClient } from "@/components/ClientProvider";
 
 export default function Footer() {
+  const client = useClient();
   return (
     <footer className="w-full bg-[#050505] text-white flex flex-col relative z-10 font-sans overflow-hidden">
       
@@ -18,7 +20,7 @@ export default function Footer() {
 
         {/* Giant stylized text */}
         <h2 className="text-[clamp(3rem,13vw,11.5rem)] font-black italic leading-[0.85] tracking-tighter uppercase select-none whitespace-nowrap overflow-hidden text-ellipsis text-center">
-          <span className="bg-gradient-to-b from-white via-white/90 to-white/60 bg-clip-text text-transparent">BrandCraft</span>
+          <span className="bg-gradient-to-b from-white via-white/90 to-white/60 bg-clip-text text-transparent">{client.name}</span>
         </h2>
       </div>
 
@@ -51,9 +53,9 @@ export default function Footer() {
           <div className="flex flex-col gap-4">
             <span className="text-xs font-bold tracking-[0.3em] uppercase text-[#b167ff]">Studio</span>
             <div className="flex flex-col gap-3">
-              <a href="mailto:info@brandcraft.com" className="text-sm text-white/60 hover:text-white transition-colors font-medium">info@brandcraft.com</a>
-              <span className="text-sm text-white/60 font-medium">+1 (123) 456-789</span>
-              <span className="text-sm text-white/60 font-medium leading-relaxed">123 Gaming Boulevard,<br/>Suite 42, Los Angeles, CA</span>
+              <a href={`mailto:${client.email}`} className="text-sm text-white/60 hover:text-white transition-colors font-medium">{client.email}</a>
+              <span className="text-sm text-white/60 font-medium">{client.phone}</span>
+              <span className="text-sm text-white/60 font-medium leading-relaxed">{client.address}</span>
             </div>
           </div>
 
@@ -80,7 +82,7 @@ export default function Footer() {
         <span className="text-xs text-white/40 uppercase tracking-widest font-medium">Copyright © 2025</span>
         <span className="text-xs text-white/40 uppercase tracking-widest font-medium flex items-center gap-2">
           <Gamepad2 className="w-3 h-3 text-[#b167ff]" />
-          We are <span className="font-bold text-white/60">BrandCraft</span>
+          We are <span className="font-bold text-white/60">{client.name}</span>
         </span>
       </div>
     </footer>

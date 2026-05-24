@@ -1,0 +1,16 @@
+{
+  "default": {
+    "name": "BrandCraft",
+    "phone": "1234567890",
+    "email": "info@brandcraft.com",
+    "address": "123 Gaming Boulevard, Suite 42, Los Angeles, CA",
+    "whatsappMessage": "Hi, I'd like to book a gaming zone!"
+  },
+  "xyz": {
+    "name": "XYZ Gaming Cafe",
+    "phone": "1987654321",
+    "email": "hello@xyzgaming.com",
+    "address": "456 Alpha Street, New York, NY",
+    "whatsappMessage": "Hey XYZ, I want to join the tournament!"
+  }
+}

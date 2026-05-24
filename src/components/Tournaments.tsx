@@ -1,7 +1,10 @@
+"use client";
 import React from 'react';
 import { Trophy } from 'lucide-react';
+import { useClient } from "@/components/ClientProvider";
 
 export default function Tournaments() {
+  const client = useClient();
   return (
     <section className="py-32 bg-background reveal relative z-10">
       <div className="max-w-7xl mx-auto px-8">
@@ -10,7 +13,10 @@ export default function Tournaments() {
             <h2 className="text-5xl font-black italic tracking-tighter mb-4">LIVE <span className="text-primary neon-text-glow">TOURNEY</span></h2>
             <p className="text-on-surface-variant">Join the weekly brackets and win pool prizes up to $5,000.</p>
           </div>
-          <button className="bg-primary/20 text-primary border border-primary/40 px-10 py-4 rounded-full font-black tracking-widest uppercase text-xs cinematic-glow hover:bg-primary/30 transition-all">
+          <button 
+            onClick={() => window.open(`https://wa.me/${client.phone}?text=${encodeURIComponent(client.whatsappMessage)}`, '_blank')}
+            className="bg-primary/20 text-primary border border-primary/40 px-10 py-4 rounded-full font-black tracking-widest uppercase text-xs cinematic-glow hover:bg-primary/30 transition-all"
+          >
             VIEW ALL BRACKETS
           </button>
         </div>

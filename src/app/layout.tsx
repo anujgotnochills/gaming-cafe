@@ -4,6 +4,8 @@ import "./globals.css";
 import PageTransition from "@/components/PageTransition";
 import TopNavBar from "@/components/TopNavBar";
 
+import ClientProvider from "@/components/ClientProvider";
+
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
@@ -30,8 +32,10 @@ export default function RootLayout({
         className={`${inter.variable} ${publicSans.variable} font-body bg-background text-on-surface antialiased custom-scrollbar overflow-x-hidden`}
         suppressHydrationWarning
       >
-        <TopNavBar />
-        <PageTransition>{children}</PageTransition>
+        <ClientProvider>
+          <TopNavBar />
+          <PageTransition>{children}</PageTransition>
+        </ClientProvider>
       </body>
     </html>
   );

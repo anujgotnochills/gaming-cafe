@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from 'react';
+import { useClient } from "@/components/ClientProvider";
 
 const GAMES = [
   { 
@@ -34,6 +35,7 @@ const GAMES = [
 
 export default function FeaturedGames() {
   const [activeGame, setActiveGame] = useState(GAMES[0]);
+  const client = useClient();
 
   return (
     <section id="tournaments" className="relative min-h-[85vh] md:h-screen w-full overflow-hidden flex flex-col justify-center transition-colors duration-1000">
@@ -73,6 +75,7 @@ export default function FeaturedGames() {
         </p>
 
         <button 
+          onClick={() => window.open(`https://wa.me/${client.phone}?text=${encodeURIComponent(client.whatsappMessage)}`, '_blank')}
           className="border text-white px-8 py-4 md:py-3 rounded-full text-[10px] font-bold uppercase tracking-widest bg-black/40 backdrop-blur-sm transition-all flex items-center gap-3 group"
           style={{ borderColor: `${activeGame.accent}80` }}
           onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = `${activeGame.accent}33`)}

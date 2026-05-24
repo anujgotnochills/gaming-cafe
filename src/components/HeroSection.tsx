@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useRouter } from 'next/navigation';
 
 const HERO_IMAGES = [
   '/hero-bg.png',
@@ -15,6 +16,7 @@ const HERO_IMAGES = [
 
 export default function HeroSection() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const router = useRouter();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -66,7 +68,10 @@ export default function HeroSection() {
           MINECRAFT ISN'T JUST A GAME. IT'S A CANVAS. A TOOLKIT. A UNIVERSE WHERE THE ONLY LIMIT IS YOUR IDEAS.
         </p>
 
-        <button className="border border-[#b167ff]/50 text-white px-8 py-4 md:py-3 rounded-full text-[10px] font-bold uppercase tracking-widest bg-black/40 md:bg-black/20 backdrop-blur-sm hover:bg-[#b167ff]/20 transition-all flex items-center gap-3 group">
+        <button 
+          onClick={() => router.push('/#zones')}
+          className="border border-[#b167ff]/50 text-white px-8 py-4 md:py-3 rounded-full text-[10px] font-bold uppercase tracking-widest bg-black/40 md:bg-black/20 backdrop-blur-sm hover:bg-[#b167ff]/20 transition-all flex items-center gap-3 group"
+        >
           ENTER THE WORLD <span className="group-hover:translate-x-1 transition-transform">-&gt;</span>
         </button>
       </div>
