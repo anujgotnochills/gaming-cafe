@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
 
 export default function TopNavBar() {
   const [scrolled, setScrolled] = useState(false);
@@ -25,15 +26,15 @@ export default function TopNavBar() {
         
         {/* Navigation Links */}
         <nav className="hidden md:flex items-center gap-10">
-          <a href="#home" className="font-bold text-white/80 tracking-widest uppercase text-[10px] hover:text-white transition-colors">HOME</a>
-          <a href="#tournaments" className="font-bold text-white/80 tracking-widest uppercase text-[10px] hover:text-white transition-colors">TOURNAMENT</a>
-          <a href="#zones" className="font-bold text-white/80 tracking-widest uppercase text-[10px] hover:text-white transition-colors">IMMERSIVE ZONES</a>
+          <Link href="/#home" className="font-bold text-white/80 tracking-widest uppercase text-[10px] hover:text-white transition-colors">HOME</Link>
+          <Link href="/#tournaments" className="font-bold text-white/80 tracking-widest uppercase text-[10px] hover:text-white transition-colors">TOURNAMENT</Link>
+          <Link href="/#zones" className="font-bold text-white/80 tracking-widest uppercase text-[10px] hover:text-white transition-colors">IMMERSIVE ZONES</Link>
         </nav>
         
         <div className="flex items-center flex-shrink-0">
-          <a className="font-bold text-white/80 tracking-widest uppercase text-[10px] hover:text-white transition-colors" href="/contact">
+          <Link className="font-bold text-white/80 tracking-widest uppercase text-[10px] hover:text-white transition-colors" href="/contact">
             CONTACT US
-          </a>
+          </Link>
         </div>
       </header>
     </div>

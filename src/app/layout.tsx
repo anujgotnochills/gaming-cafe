@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Public_Sans } from "next/font/google";
 import "./globals.css";
+import PageTransition from "@/components/PageTransition";
+import TopNavBar from "@/components/TopNavBar";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -27,7 +29,8 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${publicSans.variable} font-body bg-background text-on-surface antialiased custom-scrollbar overflow-x-hidden`}
       >
-        {children}
+        <TopNavBar />
+        <PageTransition>{children}</PageTransition>
       </body>
     </html>
   );

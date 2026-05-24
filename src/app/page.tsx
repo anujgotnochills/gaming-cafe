@@ -46,8 +46,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="min-h-screen bg-background text-on-surface">
-      <TopNavBar />
+    <main className="min-h-screen bg-background text-on-surface flex flex-col">
       <HeroSection />
       <FeaturedGames />
       <GamingZones />

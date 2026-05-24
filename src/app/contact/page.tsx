@@ -6,8 +6,6 @@ import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 export default function ContactPage() {
   return (
     <main className="min-h-screen bg-background text-on-surface flex flex-col pt-32">
-      <TopNavBar />
-      
       <div className="flex-1 max-w-7xl mx-auto px-8 w-full py-12 md:py-20 flex flex-col lg:flex-row gap-16">
         <div className="flex-1">
           <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4 block">REACH OUT</span>

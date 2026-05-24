@@ -1,7 +1,7 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Zap, Car, Gamepad2, Headset, Mic, Joystick, Dice5, Coffee, ChevronLeft, ChevronRight } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
 
 const SMALL_ZONES = [
   { id: 1, icon: Gamepad2, title: 'CONSOLE LOUNGE', desc: 'PS5 & Xbox Series X with 4K OLED screens and luxury seating.' },
@@ -31,6 +31,15 @@ const variants = {
 
 export default function GamingZones() {
   const [[carouselIndex, direction], setCarouselState] = useState([0, 0]);
+  const containerRef = useRef(null);
+  
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start end", "end start"]
+  });
+
+  // Parallax effect: translates image vertically as the user scrolls
+  const backgroundY = useTransform(scrollYProgress, [0, 1], ["-15%", "15%"]);
 
   const nextSlide = () => {
     setCarouselState([carouselIndex + 3 >= SMALL_ZONES.length ? 0 : carouselIndex + 3, 1]);
@@ -43,7 +52,19 @@ export default function GamingZones() {
   const visibleZones = SMALL_ZONES.slice(carouselIndex, carouselIndex + 3);
 
   return (
-    <section id="zones" className="py-32 bg-surface-container-lowest relative overflow-hidden reveal">
+    <section id="zones" ref={containerRef} className="py-32 bg-[#050505] relative overflow-hidden reveal">
+      
+      {/* True Parallax Background using Framer Motion */}
+      <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+        <motion.img 
+          style={{ y: backgroundY }}
+          src="/immersive-bg.jpeg" 
+          alt="Immersive Background" 
+          className="absolute -top-[20%] -left-[10%] w-[120%] h-[140%] object-cover opacity-20"
+        />
+      </div>
+
+      {/* Grid Overlay */}
       <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none z-0">
         <div className="grid grid-cols-12 h-full w-full">
           <div className="border-r border-outline-variant/20"></div>

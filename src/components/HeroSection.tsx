@@ -1,22 +1,50 @@
-import React from 'react';
-import { Box } from 'lucide-react';
+"use client";
+import React, { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+
+const HERO_IMAGES = [
+  '/hero-bg.png',
+  '/cafe-hero.jpeg',
+  '/arc-hero.webp',
+  '/cs2-hero.jpeg',
+  '/cyberpunk-hero.jpg.jpeg',
+  '/forza-hero.jpeg',
+  '/gta-hero.jpeg',
+  '/valo-hero.jpeg'
+];
 
 export default function HeroSection() {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % HERO_IMAGES.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section id="home" className="relative h-screen w-full overflow-hidden flex flex-col justify-center">
-      {/* Background Image Layer */}
-      <div className="absolute inset-0 z-0">
-        <img 
-          alt="Background" 
-          className="w-full h-full object-cover opacity-60" 
-          src="/hero-bg.png"
-        />
+      {/* Background Image Layer (Slideshow) */}
+      <div className="absolute inset-0 z-0 bg-[#050505]">
+        <AnimatePresence mode="popLayout">
+          <motion.img 
+            key={currentImageIndex}
+            src={HERO_IMAGES[currentImageIndex]}
+            alt="Hero Background" 
+            initial={{ opacity: 0, scale: 1.05 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1.5, ease: "easeInOut" }}
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+        </AnimatePresence>
         {/* Subtle overlay to make text readable */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/30 to-transparent"></div>
-        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/30 to-transparent z-10"></div>
+        <div className="absolute inset-0 bg-black/20 z-10"></div>
       </div>
 
-      <div className="relative z-10 px-12 md:px-24 w-full flex flex-col items-start pt-20">
+      <div className="relative z-20 px-12 md:px-24 w-full flex flex-col items-start pt-20">
         {/* Icon Row */}
         <div className="flex items-center gap-4 mb-10">
           <div className="w-10 h-10 flex items-center justify-center bg-[#1a1520] rounded-lg border border-white/10 shadow-lg overflow-hidden">
@@ -44,7 +72,7 @@ export default function HeroSection() {
       </div>
 
       {/* Bottom Right Text */}
-      <div className="absolute bottom-10 right-12 md:right-24 z-10">
+      <div className="absolute bottom-10 right-12 md:right-24 z-20">
         <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/80 drop-shadow-md">
           CREATE &middot; CONNECT &middot; INSPIRE
         </span>
