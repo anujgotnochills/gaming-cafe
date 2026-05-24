@@ -10,7 +10,7 @@ export default function Footer() {
       
       {/* Giant Brand Text */}
       <div className="relative px-6 md:px-12 lg:px-16 pt-20 md:pt-28 pb-16 md:pb-24">
-        {/* Subtle top gradient line */}
+        {/* Subtle top gradient line fsdfsdf*/}
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#b167ff]/30 to-transparent" />
         
         {/* Logo icon top-right */}
