@@ -10,35 +10,651 @@
     "name": "Gaming Universe",
     "phone": "+91 98911 96622",
     "email": "",
-    "address": "Under Temple Street, 2b/16A NEA, Bada Bazar Rd, New Delhi, Delhi",
-    "whatsappMessage": "Hey Gaming Universe, I want to know more about your gaming zone!"
+    "address": "under Temple Street, 2b/16A NEA, Bada Bazar Rd, New Delhi, Delhi, Delhi",
+    "whatsappMessage": "Hey Gaming Universe, I want to know more about your gaming services!"
+  },
+  "ama_zone_point": {
+    "name": "Ama Zone Point",
+    "phone": "+91 98189 84007",
+    "email": "",
+    "address": "Shop No M-9, Central Hall, Mezzanine Floor, Palika Bazar, Connaught Place, New Delhi, Delhi",
+    "whatsappMessage": "Hey Ama Zone Point, I want to know more about your gaming services!"
   },
   "vortex_gaming_cafe": {
-    "name": "Vortex Gaming Cafe",
+    "name": "vortex gaming cafe",
     "phone": "+91 70116 79167",
     "email": "",
-    "address": "124 Basement, 123, below Pizza Hut, New Delhi, Delhi",
-    "whatsappMessage": "Hey Vortex Gaming Cafe, I want to know more about your gaming cafe!"
+    "address": "124 basment, 123, below PIZZA HUT, New Delhi, Delhi",
+    "whatsappMessage": "Hey vortex gaming cafe, I want to know more about your gaming services!"
+  },
+  "arora_fun_games": {
+    "name": "Arora Fun Games",
+    "phone": "+91 96502 53570",
+    "email": "",
+    "address": "Shop No-18, Chacha Nehru Market, Captain Hitesh Mehta Marg, New Delhi, Delhi",
+    "whatsappMessage": "Hey Arora Fun Games, I want to know more about your gaming services!"
+  },
+  "squad_gaming_cafe": {
+    "name": "SQUAD GAMING CAFE",
+    "phone": "+91 70112 60948",
+    "email": "",
+    "address": "Kotla / South Ex Community Center, 1752, Kumhar Gali, near Barat Ghar, New Delhi, Delhi",
+    "whatsappMessage": "Hey SQUAD GAMING CAFE, I want to know more about your gaming services!"
+  },
+  "the_game_city": {
+    "name": "The Game City",
+    "phone": "+91 81304 52493",
+    "email": "",
+    "address": "G-65/1, New Delhi, Delhi",
+    "whatsappMessage": "Hey The Game City, I want to know more about your gaming services!"
+  },
+  "nxgt_gaming_lounge": {
+    "name": "NxGT Gaming Lounge",
+    "phone": "+91 88269 13868",
+    "email": "",
+    "address": "1st Floor, 29, above Subway, New Delhi, Delhi, Delhi",
+    "whatsappMessage": "Hey NxGT Gaming Lounge, I want to know more about your gaming services!"
   },
   "nexus_gaming": {
     "name": "Nexus Gaming",
     "phone": "+91 74280 93763",
     "email": "",
-    "address": "29, basement, below Subway, opposite Hansraj College, Delhi",
+    "address": "29, basement, below subway, opposite hansraj college, Delhi, Delhi",
     "whatsappMessage": "Hey Nexus Gaming, I want to know more about your gaming services!"
   },
   "arcade_gaming_lounge": {
     "name": "Arcade Gaming Lounge",
     "phone": "+91 96547 90853",
     "email": "",
-    "address": "Basement 19C, 20A, near 24/7, Delhi",
-    "whatsappMessage": "Hey Arcade Gaming Lounge, I want to know more about your gaming lounge!"
+    "address": "Basement 19C, 20A, near 24/7, Delhi, Delhi",
+    "whatsappMessage": "Hey Arcade Gaming Lounge, I want to know more about your gaming services!"
+  },
+  "al_internet_cafe": {
+    "name": "Al Internet Cafe",
+    "phone": "+91 98990 61238",
+    "email": "",
+    "address": "Zameer Street 9846 / 3, Nawab Gunj Rd, Delhi, Delhi",
+    "whatsappMessage": "Hey Al Internet Cafe, I want to know more about your gaming services!"
+  },
+  "sahil_cyber_cafe_and_virtual_institute": {
+    "name": "SAHIL CYBER CAFE AND VIRTUAL INSTITUTE",
+    "phone": "+91 72100 10912",
+    "email": "",
+    "address": "3204, Bahadurgarh Rd, near azad market, New Delhi, Delhi, Delhi",
+    "whatsappMessage": "Hey SAHIL CYBER CAFE AND VIRTUAL INSTITUTE, I want to know more about your gaming services!"
+  },
+  "genx_cyber_zone": {
+    "name": "GenX Cyber ZonE",
+    "phone": "+91 93100 06366",
+    "email": "",
+    "address": "2248 Gali Badi Pahar Wali, near Dharampura, Delhi, Delhi",
+    "whatsappMessage": "Hey GenX Cyber ZonE, I want to know more about your gaming services!"
+  },
+  "play_and_plate_gaming_arena": {
+    "name": "Play and Plate | Gaming Arena",
+    "phone": "+91 84679 09923",
+    "email": "",
+    "address": "Ground Floor, SE-6A, Delhi, Delhi",
+    "whatsappMessage": "Hey Play and Plate | Gaming Arena, I want to know more about your gaming services!"
+  },
+  "computer_zone": {
+    "name": "COMPUTER ZONE",
+    "phone": "+91 11 4503 7842",
+    "email": "",
+    "address": "Shop No 3239 Nr. Hanuman Chowk, New Delhi, Delhi",
+    "whatsappMessage": "Hey COMPUTER ZONE, I want to know more about your gaming services!"
   },
   "nexus_gaming_cafe": {
     "name": "Nexus Gaming Cafe",
     "phone": "+91 90132 82942",
     "email": "",
-    "address": "Shop no UG-9, Westend Mall, near BTW, New Delhi, Delhi",
-    "whatsappMessage": "Hey Nexus Gaming Cafe, I want to know more about your gaming cafe!"
+    "address": "shop no UG-9, Westend Mall, near BTW, New Delhi, Delhi, Delhi",
+    "whatsappMessage": "Hey Nexus Gaming Cafe, I want to know more about your gaming services!"
+  },
+  "gamer_zone": {
+    "name": "Gamer Zone",
+    "phone": "+91 98103 15691",
+    "email": "",
+    "address": "S/3, Delhi, Delhi",
+    "whatsappMessage": "Hey Gamer Zone, I want to know more about your gaming services!"
+  },
+  "gayatri_cyber_cafe": {
+    "name": "GAYATRI CYBER CAFE",
+    "phone": "+91 88829 18181",
+    "email": "",
+    "address": "CD MARKET, CD 104 A, Delhi, Delhi",
+    "whatsappMessage": "Hey GAYATRI CYBER CAFE, I want to know more about your gaming services!"
+  },
+  "game_galaxy": {
+    "name": "Game Galaxy",
+    "phone": "+91 85951 57031",
+    "email": "",
+    "address": "H.no 167 A-1 Om vihar, near Shri Ram apartment, new delhi, Delhi, Delhi",
+    "whatsappMessage": "Hey Game Galaxy, I want to know more about your gaming services!"
+  },
+  "game_in_kids_play_zone_in_dwarka": {
+    "name": "Game In - kids play zone in dwarka",
+    "phone": "+91 81782 18456",
+    "email": "",
+    "address": "Game in, pacific mall, Delhi, Delhi",
+    "whatsappMessage": "Hey Game In - kids play zone in dwarka, I want to know more about your gaming services!"
+  },
+  "playhouse_by_essex_farms": {
+    "name": "Playhouse by Essex Farms",
+    "phone": "+91 99994 56700",
+    "email": "",
+    "address": "Essex Farms, 4, Sri Aurobindo Marg, near IIT Crossing, New Delhi, Delhi",
+    "whatsappMessage": "Hey Playhouse by Essex Farms, I want to know more about your gaming services!"
+  },
+  "kidz_funtale_lajpat_nagar": {
+    "name": "Kidz Funtale - Lajpat Nagar",
+    "phone": "+91 92207 45746",
+    "email": "",
+    "address": "Ground Floor, 9, Firoz Gandhi Marg, New Delhi, Delhi",
+    "whatsappMessage": "Hey Kidz Funtale - Lajpat Nagar, I want to know more about your gaming services!"
+  },
+  "funmaster": {
+    "name": "FunMaster",
+    "phone": "+91 98100 16283",
+    "email": "",
+    "address": "C-1/113, Janakpuri, opposite Lal Sai Mandir/ St. Marks School, near Mata Chanan Devi Hospital, New Delhi, Delhi, Delhi",
+    "whatsappMessage": "Hey FunMaster, I want to know more about your gaming services!"
+  },
+  "m_y_gaming_and_e_sports": {
+    "name": "M.Y. Gaming & E-Sports",
+    "phone": "+91 70503 29834",
+    "email": "",
+    "address": "403, New Delhi, Delhi, Delhi",
+    "whatsappMessage": "Hey M.Y. Gaming & E-Sports, I want to know more about your gaming services!"
+  },
+  "royal_gaming_station": {
+    "name": "Royal gaming station",
+    "phone": "+91 88827 88099",
+    "email": "",
+    "address": "RZ-6 Manas Kunj, Mangal Bazar Rd, Delhi, Delhi",
+    "whatsappMessage": "Hey Royal gaming station, I want to know more about your gaming services!"
+  },
+  "nostalgia_cafe": {
+    "name": "Nostalgia Cafe",
+    "phone": "+91 98787 05823",
+    "email": "",
+    "address": "F, 21A, F Block Vijay Nagar, opposite NDPL Office, Delhi, Delhi",
+    "whatsappMessage": "Hey Nostalgia Cafe, I want to know more about your gaming services!"
+  },
+  "apex_institute_and_cyber_cafe": {
+    "name": "Apex Institute & cyber cafe",
+    "phone": "+91 98117 23242",
+    "email": "",
+    "address": "Shop No.93, Delhi, Delhi",
+    "whatsappMessage": "Hey Apex Institute & cyber cafe, I want to know more about your gaming services!"
+  },
+  "gaming_cafe": {
+    "name": "GAMING CAFE",
+    "phone": "+91 98715 64212",
+    "email": "",
+    "address": "A7 west arjun nagar, Gali No. 1, Delhi, Delhi",
+    "whatsappMessage": "Hey GAMING CAFE, I want to know more about your gaming services!"
+  },
+  "got_board": {
+    "name": "Got Board",
+    "phone": "+91 78383 85562",
+    "email": "",
+    "address": "House no 414, New Delhi, Delhi, Delhi",
+    "whatsappMessage": "Hey Got Board, I want to know more about your gaming services!"
+  },
+  "immortal_gaming_cafe": {
+    "name": "Immortal Gaming Cafe",
+    "phone": "+91 89208 52219",
+    "email": "",
+    "address": "Second & Third, Satya Niketan, 293, near Venkateswara College, New Delhi, Delhi",
+    "whatsappMessage": "Hey Immortal Gaming Cafe, I want to know more about your gaming services!"
+  },
+  "united_gamers_network_ugn": {
+    "name": "United Gamers Network (UGN)",
+    "phone": "+91 99584 53739",
+    "email": "",
+    "address": "3rd Floor, Manish Gauri Plaza, Shop no. 5,6,7, 8, Market Dwarka, near BTW, New Delhi, Delhi, Delhi",
+    "whatsappMessage": "Hey United Gamers Network (UGN), I want to know more about your gaming services!"
+  },
+  "fundoo_gaming_zone": {
+    "name": "FUNDOO Gaming Zone",
+    "phone": "+91 93152 94449",
+    "email": "",
+    "address": "Metro walk, FUNDOO GAME ZONE, Mall, New Delhi, Delhi, Delhi",
+    "whatsappMessage": "Hey FUNDOO Gaming Zone, I want to know more about your gaming services!"
+  },
+  "play_n_pop_gaming_station": {
+    "name": "PLAY N POP GAMING STATION",
+    "phone": "+91 80762 08571",
+    "email": "",
+    "address": "Second floor, 148, POCKET G-30, Delhi, Delhi",
+    "whatsappMessage": "Hey PLAY N POP GAMING STATION, I want to know more about your gaming services!"
+  },
+  "nik_gaming_zone_2_0": {
+    "name": "NIK GAMING ZONE 2.0",
+    "phone": "+91 92052 31914",
+    "email": "",
+    "address": "A/5 83A, New Delhi, Delhi, Delhi",
+    "whatsappMessage": "Hey NIK GAMING ZONE 2.0, I want to know more about your gaming services!"
+  },
+  "bzurkk_gaming_arcade_and_golf_simulator": {
+    "name": "Bzurkk!! Gaming Arcade and Golf Simulator",
+    "phone": "+91 70424 81100",
+    "email": "",
+    "address": "Punjab Bagh, Club, New Delhi, Delhi, Delhi",
+    "whatsappMessage": "Hey Bzurkk!! Gaming Arcade and Golf Simulator, I want to know more about your gaming services!"
+  },
+  "game_zone_knockout": {
+    "name": "Game Zone Knockout",
+    "phone": "+91 99117 78880",
+    "email": "",
+    "address": "3rd Floor, C7/79, New Delhi, Delhi, Delhi",
+    "whatsappMessage": "Hey Game Zone Knockout, I want to know more about your gaming services!"
+  },
+  "magic_land_games": {
+    "name": "Magic Land Games",
+    "phone": "+91 74287 92724",
+    "email": "",
+    "address": "Shop No 124, Gaffar Market, New Delhi, Delhi, Delhi",
+    "whatsappMessage": "Hey Magic Land Games, I want to know more about your gaming services!"
+  },
+  "the_gaming_hub": {
+    "name": "The Gaming Hub",
+    "phone": "+91 98916 15528",
+    "email": "",
+    "address": "Shop no. 2, WZ -1778, opposite Batra properties, New Delhi, Delhi, Delhi",
+    "whatsappMessage": "Hey The Gaming Hub, I want to know more about your gaming services!"
+  },
+  "game": {
+    "name": "game",
+    "phone": "+91 83682 46681",
+    "email": "",
+    "address": "Street No. 2, Delhi, Delhi",
+    "whatsappMessage": "Hey game, I want to know more about your gaming services!"
+  },
+  "gaming_headquarter": {
+    "name": "Gaming Headquarter",
+    "phone": "+91 88822 75887",
+    "email": "",
+    "address": "Gali No. 10, Delhi, Delhi",
+    "whatsappMessage": "Hey Gaming Headquarter, I want to know more about your gaming services!"
+  },
+  "lan_shack_gaming_cafe": {
+    "name": "Lan Shack Gaming Cafe",
+    "phone": "+91 85888 94322",
+    "email": "",
+    "address": "Second Floor F203, Ashish Complex, near Metro Gate No-3, behind Chawla Chicken, Delhi, Delhi",
+    "whatsappMessage": "Hey Lan Shack Gaming Cafe, I want to know more about your gaming services!"
+  },
+  "genz_gaming_lounge_gaming_cafe": {
+    "name": "Genz Gaming Lounge | Gaming Cafe",
+    "phone": "+91 98715 14949",
+    "email": "",
+    "address": "Pocket-D, 765, near Greenway Modern school, Delhi, Delhi",
+    "whatsappMessage": "Hey Genz Gaming Lounge | Gaming Cafe, I want to know more about your gaming services!"
+  },
+  "mario_bros_gaming_and_cafe": {
+    "name": "Mario bros gaming and cafe",
+    "phone": "+91 78358 80713",
+    "email": "",
+    "address": "D, Lal Quarters Rd, New Delhi, Delhi, Delhi",
+    "whatsappMessage": "Hey Mario bros gaming and cafe, I want to know more about your gaming services!"
+  },
+  "joyandjerry": {
+    "name": "joyandjerry",
+    "phone": "+91 93109 13191",
+    "email": "",
+    "address": "29/7, Nangia Park Chowk, New Delhi, Delhi, Delhi",
+    "whatsappMessage": "Hey joyandjerry, I want to know more about your gaming services!"
+  },
+  "game_ghar": {
+    "name": "Game Ghar",
+    "phone": "+91 98111 13309",
+    "email": "",
+    "address": "143, Saraswati Marg, Delhi, Delhi",
+    "whatsappMessage": "Hey Game Ghar, I want to know more about your gaming services!"
+  },
+  "teeny_town": {
+    "name": "Teeny Town",
+    "phone": "+91 95994 95353",
+    "email": "",
+    "address": "Plot no. 2, Road no. 85, NWA, Club Road, Punjabi Bagh (W),, New Delhi, Delhi, Delhi",
+    "whatsappMessage": "Hey Teeny Town, I want to know more about your gaming services!"
+  },
+  "aimerce_arena": {
+    "name": "Aimerce Arena",
+    "phone": "+91 87006 64840",
+    "email": "",
+    "address": "wz2900, near M2K Road, Delhi, Delhi",
+    "whatsappMessage": "Hey Aimerce Arena, I want to know more about your gaming services!"
+  },
+  "laser_fighting_zone": {
+    "name": "Laser Fighting Zone",
+    "phone": "+91 97183 59597",
+    "email": "",
+    "address": "D-46, Delhi, Delhi",
+    "whatsappMessage": "Hey Laser Fighting Zone, I want to know more about your gaming services!"
+  },
+  "noisy_world_gaming_zone": {
+    "name": "Noisy World ( Gaming Zone)",
+    "phone": "+91 84475 10238",
+    "email": "",
+    "address": "M3CM+5R5, Delhi, Delhi",
+    "whatsappMessage": "Hey Noisy World ( Gaming Zone), I want to know more about your gaming services!"
+  },
+  "sagar_cyber_cafe": {
+    "name": "Sagar Cyber Cafe",
+    "phone": "+91 85879 44703",
+    "email": "",
+    "address": "B-18, DDA Market Tigri Near Rozana Bazar, near Mother Dairy, New Delhi, Delhi",
+    "whatsappMessage": "Hey Sagar Cyber Cafe, I want to know more about your gaming services!"
+  },
+  "cyber_city_gaming_cafe": {
+    "name": "Cyber City Gaming Cafe",
+    "phone": "+91 97167 11910",
+    "email": "",
+    "address": "128/C, Village, New Delhi, Delhi",
+    "whatsappMessage": "Hey Cyber City Gaming Cafe, I want to know more about your gaming services!"
+  },
+  "electrobot_gaming_cafe_e61": {
+    "name": "Electrobot Gaming Cafe E61",
+    "phone": "+91 70117 48025",
+    "email": "",
+    "address": "Ground Floor, E61B, New Delhi, Delhi",
+    "whatsappMessage": "Hey Electrobot Gaming Cafe E61, I want to know more about your gaming services!"
+  },
+  "ddgaming_cafe_by_deals_delhi": {
+    "name": "DDGaming Cafe (By Deals Delhi)",
+    "phone": "+91 88269 75452",
+    "email": "",
+    "address": "Shop no. 2, F-20, near Bindapur, New Delhi, Delhi, Delhi",
+    "whatsappMessage": "Hey DDGaming Cafe (By Deals Delhi), I want to know more about your gaming services!"
+  },
+  "adrenaline_gaming_cafe": {
+    "name": "Adrenaline Gaming Cafe",
+    "phone": "+91 70428 37326",
+    "email": "",
+    "address": "THIRD FLOOR, ADRENALINE GAMING CAFE, PARSHURAM CHOWK, RZ-1/2, New Delhi, Delhi, Delhi",
+    "whatsappMessage": "Hey Adrenaline Gaming Cafe, I want to know more about your gaming services!"
+  },
+  "sejwal_cyber_cafe": {
+    "name": "Sejwal Cyber Cafe",
+    "phone": "+91 81308 26180",
+    "email": "",
+    "address": "Najafgarh Dhansa Rd, Delhi, Delhi",
+    "whatsappMessage": "Hey Sejwal Cyber Cafe, I want to know more about your gaming services!"
+  },
+  "rana_cyber_cafe": {
+    "name": "Rana Cyber Cafe",
+    "phone": "+91 99710 76048",
+    "email": "",
+    "address": "Shop No.272, Vardhman Plus City Mall, Dwarka sector 23, Dwarka, Delhi, Delhi",
+    "whatsappMessage": "Hey Rana Cyber Cafe, I want to know more about your gaming services!"
+  },
+  "aryan_cyber_cafe": {
+    "name": "Aryan Cyber Cafe",
+    "phone": "+91 96252 09096",
+    "email": "",
+    "address": "RZ-13, Shop No - 2, Indra Park Extension, Uttam Nagar, Delhi, Delhi",
+    "whatsappMessage": "Hey Aryan Cyber Cafe, I want to know more about your gaming services!"
+  },
+  "rahul_digital_zone": {
+    "name": "Rahul Digital Zone",
+    "phone": "+91 92126 46810",
+    "email": "",
+    "address": "RZD-57, Street Number 3, New Delhi, Delhi, Delhi",
+    "whatsappMessage": "Hey Rahul Digital Zone, I want to know more about your gaming services!"
+  },
+  "1_stop_gaming_parlor": {
+    "name": "1 stop Gaming parlor",
+    "phone": "+91 88601 27906",
+    "email": "",
+    "address": "shop fauji, tau wale gali, 1 stop gaming, Rz 9a, Dichaon Rd, New Delhi, Delhi, Delhi",
+    "whatsappMessage": "Hey 1 stop Gaming parlor, I want to know more about your gaming services!"
+  },
+  "dev_gaming_zone": {
+    "name": "Dev Gaming Zone",
+    "phone": "+91 99990 31438",
+    "email": "",
+    "address": "Shop No 7, New Delhi, Delhi, Delhi",
+    "whatsappMessage": "Hey Dev Gaming Zone, I want to know more about your gaming services!"
+  },
+  "alliance_gaming": {
+    "name": "Alliance Gaming",
+    "phone": "+91 97738 68555",
+    "email": "",
+    "address": "86 A First floor, opposite to mother dairy booth chawla stand, Delhi, Delhi",
+    "whatsappMessage": "Hey Alliance Gaming, I want to know more about your gaming services!"
+  },
+  "starlord_gaming_zone": {
+    "name": "Starlord Gaming Zone",
+    "phone": "+91 88600 85788",
+    "email": "",
+    "address": "303, Main Kakrola Rd, Delhi, Delhi",
+    "whatsappMessage": "Hey Starlord Gaming Zone, I want to know more about your gaming services!"
+  },
+  "master_cyber_cafe": {
+    "name": "Master Cyber Cafe",
+    "phone": "+91 11 4103 5357",
+    "email": "",
+    "address": "E-137/6, Gulmohar Park Rd, New Delhi, Delhi",
+    "whatsappMessage": "Hey Master Cyber Cafe, I want to know more about your gaming services!"
+  },
+  "sunrise_cyber_cafe": {
+    "name": "Sunrise Cyber Cafe",
+    "phone": "+91 92122 84021",
+    "email": "",
+    "address": "Shop No. 9/2, N Block, Middle Circle, Connaught Place, New Delhi, Delhi",
+    "whatsappMessage": "Hey Sunrise Cyber Cafe, I want to know more about your gaming services!"
+  },
+  "cyber_space": {
+    "name": "Cyber Space",
+    "phone": "+91 98113 98934",
+    "email": "",
+    "address": "A-12, New Delhi, Delhi",
+    "whatsappMessage": "Hey Cyber Space, I want to know more about your gaming services!"
+  },
+  "cyber_zone_internet_cafe": {
+    "name": "Cyber Zone Internet Cafe",
+    "phone": "+91 90154 18660",
+    "email": "",
+    "address": "8A, 1, Kalu Sarai Rd, near VASISHT HOUSE, New Delhi, Delhi",
+    "whatsappMessage": "Hey Cyber Zone Internet Cafe, I want to know more about your gaming services!"
+  },
+  "funcapers": {
+    "name": "Funcapers",
+    "phone": "+91 79825 45287",
+    "email": "",
+    "address": "1st Floor, K-20, New Delhi, Delhi",
+    "whatsappMessage": "Hey Funcapers, I want to know more about your gaming services!"
+  },
+  "veronica_cyber_cafe": {
+    "name": "Veronica Cyber Cafe",
+    "phone": "+91 11 4163 1330",
+    "email": "",
+    "address": "HS-21, SBI ATM Building, Kailash Colony Market, 011-41631330, 8800492200, opp. Market Temple, near Kailash Colony Metro Station, New Delhi, Delhi",
+    "whatsappMessage": "Hey Veronica Cyber Cafe, I want to know more about your gaming services!"
+  },
+  "guru_cyber_cafe": {
+    "name": "Guru Cyber Cafe",
+    "phone": "+91 99713 85675",
+    "email": "",
+    "address": "C-32, Delhi, Delhi",
+    "whatsappMessage": "Hey Guru Cyber Cafe, I want to know more about your gaming services!"
+  },
+  "internet_cafe": {
+    "name": "INTERNET CAFE",
+    "phone": "+91 88261 25707",
+    "email": "",
+    "address": "149, SCINDIA HOUSE, NEAR SHAN-E-DILLI RESTAURANT, New Delhi, Delhi",
+    "whatsappMessage": "Hey INTERNET CAFE, I want to know more about your gaming services!"
+  },
+  "ifuncity": {
+    "name": "iFUNCITY",
+    "phone": "+91 99233 94844",
+    "email": "",
+    "address": "40 Futa, F-8, New Delhi, Delhi",
+    "whatsappMessage": "Hey iFUNCITY, I want to know more about your gaming services!"
+  },
+  "kanishka_cyber_cafe": {
+    "name": "Kanishka Cyber Cafe",
+    "phone": "+91 99100 25162",
+    "email": "",
+    "address": "I-161 Gujjar Colony, New Delhi, Delhi",
+    "whatsappMessage": "Hey Kanishka Cyber Cafe, I want to know more about your gaming services!"
+  },
+  "nict_cyber_cafe": {
+    "name": "Nict Cyber Cafe",
+    "phone": "+91 95820 83525",
+    "email": "",
+    "address": "26/25, Basement, Bada Bazar Rd, Delhi, Delhi",
+    "whatsappMessage": "Hey Nict Cyber Cafe, I want to know more about your gaming services!"
+  },
+  "sky_gaming_zone": {
+    "name": "Sky Gaming Zone",
+    "phone": "+91 79825 51700",
+    "email": "",
+    "address": "V.P.O, Delhi, Delhi",
+    "whatsappMessage": "Hey Sky Gaming Zone, I want to know more about your gaming services!"
+  },
+  "breakdown_gaming_zone": {
+    "name": "Breakdown Gaming Zone",
+    "phone": "+91 99584 67473",
+    "email": "",
+    "address": "H-130 A, Delhi, Delhi",
+    "whatsappMessage": "Hey Breakdown Gaming Zone, I want to know more about your gaming services!"
+  },
+  "gamer_s_haven": {
+    "name": "GAMER'S HAVEN",
+    "phone": "+91 81308 87438",
+    "email": "",
+    "address": "1st FLOOR, 1/2627, near AHINSHA VATIKA, Delhi, Delhi",
+    "whatsappMessage": "Hey GAMER'S HAVEN, I want to know more about your gaming services!"
+  },
+  "the_gamers_cafe": {
+    "name": "The Gamers Cafe",
+    "phone": "+91 80104 95566",
+    "email": "",
+    "address": "Office No. 202, Second floor, Aggar Complex, Market, New delhi, Delhi, Delhi",
+    "whatsappMessage": "Hey The Gamers Cafe, I want to know more about your gaming services!"
+  },
+  "teeny_town_2": {
+    "name": "Teeny Town",
+    "phone": "+91 85274 62629",
+    "email": "",
+    "address": "18, Surya Niketan Rd, Delhi, Delhi",
+    "whatsappMessage": "Hey Teeny Town, I want to know more about your gaming services!"
+  },
+  "hungry_gamerzz": {
+    "name": "Hungry Gamerzz",
+    "phone": "+91 97736 92832",
+    "email": "",
+    "address": "B 114 Gali no 05, Delhi, Delhi",
+    "whatsappMessage": "Hey Hungry Gamerzz, I want to know more about your gaming services!"
+  },
+  "kidz_and_bigz": {
+    "name": "Kidz & Bigz",
+    "phone": "+91 80767 07501",
+    "email": "",
+    "address": "A-2, level, 2, opposite Metro Pillar No.120, near Karkardooma Metro Station, Delhi, Delhi",
+    "whatsappMessage": "Hey Kidz & Bigz, I want to know more about your gaming services!"
+  },
+  "a_b_gaming_zone": {
+    "name": "A.B. Gaming Zone",
+    "phone": "+91 74660 19798",
+    "email": "",
+    "address": "Sunday Market, Street No.4, near bulbul property, Delhi, Delhi",
+    "whatsappMessage": "Hey A.B. Gaming Zone, I want to know more about your gaming services!"
+  },
+  "games_bond": {
+    "name": "Games Bond",
+    "phone": "+91 99534 44878",
+    "email": "",
+    "address": "G-39, New Delhi, Delhi, Delhi",
+    "whatsappMessage": "Hey Games Bond, I want to know more about your gaming services!"
+  },
+  "masquerade_delhi_experiential_multicuisine_cafe_by_mystery_rooms": {
+    "name": "Masquerade Delhi – Experiential Multicuisine Café (by Mystery Rooms)",
+    "phone": "+91 92893 55644",
+    "email": "",
+    "address": "3rd Floor, D, 213, Ring Rd, New Delhi, Delhi, Delhi",
+    "whatsappMessage": "Hey Masquerade Delhi – Experiential Multicuisine Café (by Mystery Rooms), I want to know more about your gaming services!"
+  },
+  "raj_cafe": {
+    "name": "Raj Cafe",
+    "phone": "+91 84591 12370",
+    "email": "",
+    "address": "EA1/68,Main Market, Puran Chand Yogi Marg, New Delhi, Delhi",
+    "whatsappMessage": "Hey Raj Cafe, I want to know more about your gaming services!"
+  },
+  "batra_cyber_cafe": {
+    "name": "Batra Cyber Cafe",
+    "phone": "+91 98182 77440",
+    "email": "",
+    "address": "213, Satya Niketan Rd, New Delhi, Delhi",
+    "whatsappMessage": "Hey Batra Cyber Cafe, I want to know more about your gaming services!"
+  },
+  "cafe_mrp": {
+    "name": "Cafe MRP",
+    "phone": "+91 99904 20628",
+    "email": "",
+    "address": "C-39, First Floor Radial Road 5 Opp. Odeon Cinema, New Delhi, Delhi",
+    "whatsappMessage": "Hey Cafe MRP, I want to know more about your gaming services!"
+  },
+  "mangal_cyber_cafe": {
+    "name": "MANGAL CYBER CAFE",
+    "phone": "+91 99717 31626",
+    "email": "",
+    "address": "Laxman Singh Complex, D-211, 2, near HANUMAN MANDIR, New Delhi, Delhi",
+    "whatsappMessage": "Hey MANGAL CYBER CAFE, I want to know more about your gaming services!"
+  },
+  "kalka_cyber_cafe": {
+    "name": "KALKA CYBER CAFE",
+    "phone": "+91 78277 58653",
+    "email": "",
+    "address": "H no RZ-93B Gali, 10, Madhya Marg, New Delhi, Delhi",
+    "whatsappMessage": "Hey KALKA CYBER CAFE, I want to know more about your gaming services!"
+  },
+  "garg_cyber_cafe": {
+    "name": "Garg Cyber Cafe",
+    "phone": "+91 99999 67224",
+    "email": "",
+    "address": "null, New Delhi, Delhi",
+    "whatsappMessage": "Hey Garg Cyber Cafe, I want to know more about your gaming services!"
+  },
+  "gamers_zone_video_game_parlour_play_playstation_4": {
+    "name": "GAMERS ZONE VIDEO GAME PARLOUR play playstation 4",
+    "phone": "+91 99101 00550",
+    "email": "",
+    "address": "12, Veer Savarkar Block Shakarpur Opp Lovely Playway School Nirman vihar Delhi, New Delhi, Delhi, Delhi",
+    "whatsappMessage": "Hey GAMERS ZONE VIDEO GAME PARLOUR play playstation 4, I want to know more about your gaming services!"
+  },
+  "s_k_cyber_cafe": {
+    "name": "S.K. Cyber Cafe",
+    "phone": "+91 88262 72917",
+    "email": "",
+    "address": "Shop 76, Pahar Ganj, 8445, Desh Bandhu Gupta Road, New, New Delhi, Delhi",
+    "whatsappMessage": "Hey S.K. Cyber Cafe, I want to know more about your gaming services!"
+  },
+  "red_ball_international_prashant_vihar_best_snooker_best_pool_play_stations_mars_cafe_best_lounge": {
+    "name": "Red Ball International Prashant Vihar | Best Snooker | Best Pool | Play Stations | Mars Cafe | Best Lounge",
+    "phone": "+91 73033 39011",
+    "email": "",
+    "address": "A1/1, below MG car Showroom, New Delhi, Delhi, Delhi",
+    "whatsappMessage": "Hey Red Ball International Prashant Vihar | Best Snooker | Best Pool | Play Stations | Mars Cafe | Best Lounge, I want to know more about your gaming services!"
+  },
+  "turban_coffee": {
+    "name": "Turban coffee",
+    "phone": "+91 79822 84275",
+    "email": "",
+    "address": "D14-240, Kadambari Rd, Delhi, Delhi",
+    "whatsappMessage": "Hey Turban coffee, I want to know more about your gaming services!"
+  },
+  "alok_cybercafe": {
+    "name": "Alok cybercafe",
+    "phone": "+91 97175 33311",
+    "email": "",
+    "address": "Shop no 2, gali 1, Delhi, Delhi",
+    "whatsappMessage": "Hey Alok cybercafe, I want to know more about your gaming services!"
   }
 }
