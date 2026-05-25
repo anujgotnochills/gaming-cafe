@@ -155,7 +155,7 @@ export default function GamingZones() {
               <ChevronLeft size={24} />
             </button>
             <button 
-              onClick={nextSlide}
+              onClick={() => nextSlide()}
               className="absolute right-0 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full border border-outline-variant/30 flex items-center justify-center hover:bg-surface-container-highest hover:border-primary/50 transition-colors z-30 bg-background/80 backdrop-blur shadow-xl"
             >
               <ChevronRight size={24} />
@@ -206,10 +206,8 @@ export default function GamingZones() {
               return (
                 <motion.div
                   key={zone.id}
-                  custom={direction}
                   variants={mobileSwipeVariants}
                   initial="initial"
-                  animate="animate"
                   exit="exit"
                   custom={idx === 0 ? direction : undefined}
                   // We manually set custom index for animation interpolation
