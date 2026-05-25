@@ -6,11 +6,39 @@
     "address": "123 Gaming Boulevard, Suite 42, Los Angeles, CA",
     "whatsappMessage": "Hi, I'd like to book a gaming zone!"
   },
-  "xyz": {
-    "name": "XYZ Gaming Cafe",
-    "phone": "1987654321",
-    "email": "hello@xyzgaming.com",
-    "address": "456 Alpha Street, New York, NY",
-    "whatsappMessage": "Hey XYZ, I want to join the tournament!"
+  "gaming_universe": {
+    "name": "Gaming Universe",
+    "phone": "+91 98911 96622",
+    "email": "",
+    "address": "Under Temple Street, 2b/16A NEA, Bada Bazar Rd, New Delhi, Delhi",
+    "whatsappMessage": "Hey Gaming Universe, I want to know more about your gaming zone!"
+  },
+  "vortex_gaming_cafe": {
+    "name": "Vortex Gaming Cafe",
+    "phone": "+91 70116 79167",
+    "email": "",
+    "address": "124 Basement, 123, below Pizza Hut, New Delhi, Delhi",
+    "whatsappMessage": "Hey Vortex Gaming Cafe, I want to know more about your gaming cafe!"
+  },
+  "nexus_gaming": {
+    "name": "Nexus Gaming",
+    "phone": "+91 74280 93763",
+    "email": "",
+    "address": "29, basement, below Subway, opposite Hansraj College, Delhi",
+    "whatsappMessage": "Hey Nexus Gaming, I want to know more about your gaming services!"
+  },
+  "arcade_gaming_lounge": {
+    "name": "Arcade Gaming Lounge",
+    "phone": "+91 96547 90853",
+    "email": "",
+    "address": "Basement 19C, 20A, near 24/7, Delhi",
+    "whatsappMessage": "Hey Arcade Gaming Lounge, I want to know more about your gaming lounge!"
+  },
+  "nexus_gaming_cafe": {
+    "name": "Nexus Gaming Cafe",
+    "phone": "+91 90132 82942",
+    "email": "",
+    "address": "Shop no UG-9, Westend Mall, near BTW, New Delhi, Delhi",
+    "whatsappMessage": "Hey Nexus Gaming Cafe, I want to know more about your gaming cafe!"
   }
 }
